@@ -314,105 +314,471 @@
     {
       "cell_type": "code",
       "source": [
-        "import numpy as np\n",
+        "x = 1\n",
+        "a,b = 0, -1\n",
         "\n",
-        "x = np.array(-0.5)\n",
-        "x\n"
+        "type(x)\n",
+        "\n",
+        "y = 1.0\n",
+        "type(y)\n",
+        "\n",
+        "x = float(x)\n",
+        "type(x)\n",
+        "\n",
+        "s,t,u = \"0\", '1', 'one'\n",
+        "type(s)\n",
+        "\n",
+        "s_int = int(s)\n",
+        "s_int\n"
       ],
       "metadata": {
-        "id": "etoojqPnq7uA",
-        "outputId": "ab415d8f-8963-4428-a66e-88f3486e09c2",
+        "id": "CrUtwNphs73Z",
+        "outputId": "c8b81c01-0177-4155-a87e-949c48b6c4fb",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
       },
-      "execution_count": 13,
+      "execution_count": 17,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "array(-0.5)"
+              "0"
             ]
           },
           "metadata": {},
-          "execution_count": 13
+          "execution_count": 17
         }
       ]
     },
     {
       "cell_type": "code",
       "source": [
-        "import numpy as np\n",
+        "a,b,c,d = 2.0, -0.5, 0, -32\n",
         "\n",
-        "ball1 = np.array([1, 2, 3])\n",
-        "ball2 = np.array([0, 1, -1])\n",
-        "pool = np.array([ball1, ball2])  # Creating a matrix\n",
+        "### Addition\n",
+        "S = a+b\n",
+        "S\n",
         "\n",
-        "# Checking the shape of the 'pool' matrix\n",
-        "pool.shape\n",
-        "U = np.array([\n",
-        "    [1, 2],\n",
-        "    [2, 3]\n",
-        "])\n",
+        "### Subtraction\n",
+        "D = b-d\n",
+        "D\n",
         "\n",
-        "# Checking the shape of the 'U' matrix\n",
-        "U.shape\n",
-        "# Checking the size (total number of elements) of the 'U' matrix\n",
-        "U.size\n",
-        "# Checking the number of dimensions (rank) of the 'ball1' array\n",
-        "ball1.ndim\n",
-        "# Checking the number of dimensions (rank) of the 'pool' matrix\n",
-        "pool.ndim"
+        "### Multiplication\n",
+        "P = a*d\n",
+        "P\n",
+        "\n",
+        "### Division\n",
+        "Q = c/a\n",
+        "Q\n"
       ],
       "metadata": {
-        "id": "WdKasaR5ru4q",
-        "outputId": "c2fa75e6-0803-4f43-8204-5102d28ebbef",
+        "id": "BDMGGGfytBiC",
+        "outputId": "4912690e-d649-4680-f5ae-2a4c0bb0cd04",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
       },
-      "execution_count": 16,
+      "execution_count": 18,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "2"
+              "0.0"
             ]
           },
           "metadata": {},
-          "execution_count": 16
+          "execution_count": 18
         }
       ]
     },
     {
       "cell_type": "code",
       "source": [
-        "A = np.array([4,3])\n",
-        "B = np.array([2, -5])\n",
+        "### Exponentiation\n",
+        "E = a**b\n",
+        "E\n",
         "\n",
-        "print('Vector A is ', A)\n",
-        "print('Vector B is ', B)\n"
+        "### Modulo\n",
+        "mod = d%a\n",
+        "mod\n"
       ],
       "metadata": {
-        "id": "ULHNz04wrcyU",
-        "outputId": "42a49f89-7314-4c2b-d009-35144fb1dcea",
+        "id": "U6aiQ187tE6P",
+        "outputId": "333c3754-5e6d-4319-f882-1558b64f4a42",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
       },
-      "execution_count": 15,
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "G, H, J, K = 0, 100, 2, 2\n",
+        "\n",
+        "G += a\n",
+        "G\n",
+        "\n",
+        "H -= d\n",
+        "\n",
+        "J *= 2\n",
+        "J\n",
+        "\n",
+        "K **= 2\n",
+        "K\n"
+      ],
+      "metadata": {
+        "id": "cJzKKExftIoV",
+        "outputId": "1141d1d5-c3d5-4971-fe52-f542e25afbe1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello World\")\n",
+        "\n",
+        "cnt = 1\n",
+        "\n",
+        "string = \"Hello World\"\n",
+        "print(string, \", Current run count is:\", cnt)\n",
+        "cnt += 1\n",
+        "\n",
+        "print(f\"{string}, Current count is: {cnt}\")\n",
+        "\n",
+        "sem_grade = 82.243564657461234\n",
+        "name = \"\"\n",
+        "print(\"Hello {}, your semestral grade is: {}\".format(name, sem_grade))\n",
+        "\n",
+        "w_pg, w_mg, w_fg = 0.3, 0.3, 0.4\n",
+        "print(\"The weights of your semestral grades are:\\\n",
+        "\\n\\t{:.2%} for Prelims\\\n",
+        "\\n\\t{:.2%} for Midterms, and\\\n",
+        "\\n\\t{:.2%} for Finals.\".format(w_pg, w_mg, w_fg))\n",
+        "\n",
+        "x = input(\"enter a number: \")\n",
+        "x\n",
+        "\n",
+        "name = input(\"Kimi no nawa: \")\n",
+        "pg = input(\"Enter prelim grade: \")\n",
+        "mg = input(\"Enter midterm grade: \")\n",
+        "fg = input(\"Enter finals grade: \")\n",
+        "sem_grade = None\n",
+        "print(\"Hello {}, your semestral grade is: {}\".format(name, sem_grade))\n"
+      ],
+      "metadata": {
+        "id": "38jLX-p1tNRj",
+        "outputId": "42b7efa7-7f6d-4384-eee7-7edacf291f96",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Vector A is  [4 3]\n",
-            "Vector B is  [ 2 -5]\n"
+            "Hello World\n",
+            "Hello World , Current run count is: 1\n",
+            "Hello World, Current count is: 2\n",
+            "Hello , your semestral grade is: 82.24356465746123\n",
+            "The weights of your semestral grades are:\n",
+            "\t30.00% for Prelims\n",
+            "\t30.00% for Midterms, and\n",
+            "\t40.00% for Finals.\n",
+            "enter a number: 2\n",
+            "Kimi no nawa: grant\n",
+            "Enter prelim grade: 3\n",
+            "Enter midterm grade: 5\n",
+            "Enter finals grade: 2\n",
+            "Hello grant, your semestral grade is: None\n"
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "res_1 = 2\n",
+        "true_val = 1\n",
+        "\n",
+        "res_1 == true_val\n",
+        "res_1 is true_val\n",
+        "res_1 is not true_val\n",
+        "p, q = True, False\n",
+        "conj = p and q\n",
+        "conj\n",
+        "p, q = True, False\n",
+        "disj = p or q\n",
+        "disj\n",
+        "p, q = True, False\n",
+        "nand = not(p and q)\n",
+        "nand\n",
+        "p, q = True, False\n",
+        "xor = (not p and q) or (p and not q)\n",
+        "xor\n"
+      ],
+      "metadata": {
+        "id": "rP8tyD5duH-z",
+        "outputId": "3a782564-b554-4009-8832-b360e9b56709",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello World\")\n",
+        "\n",
+        "cnt = 1\n",
+        "\n",
+        "string = \"Hello World\"\n",
+        "print(string, \", Current run count is:\", cnt)\n",
+        "cnt += 1\n",
+        "\n",
+        "print(f\"{string}, Current count is: {cnt}\")\n",
+        "\n",
+        "sem_grade = 82.243564657461234\n",
+        "name = \"\"\n",
+        "print(\"Hello {}, your semestral grade is: {}\".format(name, sem_grade))\n",
+        "\n",
+        "w_pg, w_mg, w_fg = 0.3, 0.3, 0.4\n",
+        "print(\"The weights of your semestral grades are:\\\n",
+        "\\n\\t{:.2%} for Prelims\\\n",
+        "\\n\\t{:.2%} for Midterms, and\\\n",
+        "\\n\\t{:.2%} for Finals.\".format(w_pg, w_mg, w_fg))\n",
+        "\n",
+        "x = input(\"enter a number: \")\n",
+        "x\n",
+        "\n",
+        "name = input(\"Kimi no nawa: \")\n",
+        "pg = input(\"Enter prelim grade: \")\n",
+        "mg = input(\"Enter midterm grade: \")\n",
+        "fg = input(\"Enter finals grade: \")\n",
+        "sem_grade = None\n",
+        "print(\"Hello {}, your semestral grade is: {}\".format(name, sem_grade))\n"
+      ],
+      "metadata": {
+        "id": "jEauL6Lhvbr6",
+        "outputId": "6f6765cf-039f-433d-9cb1-be1ed73479e6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n",
+            "Hello World , Current run count is: 1\n",
+            "Hello World, Current count is: 2\n",
+            "Hello , your semestral grade is: 82.24356465746123\n",
+            "The weights of your semestral grades are:\n",
+            "\t30.00% for Prelims\n",
+            "\t30.00% for Midterms, and\n",
+            "\t40.00% for Finals.\n",
+            "enter a number: 70\n",
+            "Kimi no nawa: grant\n",
+            "Enter prelim grade: 80\n",
+            "Enter midterm grade: 90\n",
+            "Enter finals grade: 70\n",
+            "Hello grant, your semestral grade is: None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "res_1, res_2, res_3 = 1, 2.0, \"1\"\n",
+        "true_val = 1.0\n",
+        "\n",
+        "## Equality\n",
+        "res_1 == true_val\n",
+        "\n",
+        "## Non-equality\n",
+        "res_2 != true_val\n",
+        "\n",
+        "## Inequality\n",
+        "t1 = res_1 > res_2\n",
+        "t2 = res_1 < res_2/2\n",
+        "t3 = res_1 >= res_2/2\n",
+        "t4 = res_1 <= res_2\n",
+        "t1\n"
+      ],
+      "metadata": {
+        "id": "PbjtksPevnvo",
+        "outputId": "f1e791bd-1031-4c50-91ae-2aade3800dd6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## while loops\n",
+        "i, j = 0, 10\n",
+        "while(i<=j):\n",
+        "    print(f\"{i}\\t|\\t{j}\")\n",
+        "    i+=1\n",
+        "\n",
+        "# for(int i=0; i<10; i++){\n",
+        "# printf(i)\n",
+        "# }\n",
+        "\n",
+        "i=0\n",
+        "for i in range(10):\n",
+        "    print(i)\n"
+      ],
+      "metadata": {
+        "id": "nCJDCMTJwCZ_",
+        "outputId": "bbf66850-3224-47ce-c95d-0cd2190fdf6e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\t|\t10\n",
+            "1\t|\t10\n",
+            "2\t|\t10\n",
+            "3\t|\t10\n",
+            "4\t|\t10\n",
+            "5\t|\t10\n",
+            "6\t|\t10\n",
+            "7\t|\t10\n",
+            "8\t|\t10\n",
+            "9\t|\t10\n",
+            "10\t|\t10\n",
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "###Condition Statements\n",
+        "numeral1, numeral2 = 12, 12\n",
+        "if(numeral1 == numeral2):\n",
+        "     print(\"Yey\")\n",
+        "elif(numeral1>numeral2):\n",
+        "     print(\"Hoho\")\n",
+        "else:\n",
+        "     print(\"Aww\")\n",
+        "print(\"Hip hip\")\n"
+      ],
+      "metadata": {
+        "id": "JCi3_aCowTjp",
+        "outputId": "a3789d1b-1563-4d0d-f9da-96e23b567afd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yey\n",
+            "Hip hip\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# void DeleteUser(int userid){\n",
+        "#     delete(userid);\n",
+        "# }\n",
+        "\n",
+        "def delete_user (userid):\n",
+        "     print(\"Successfully deleted user: {}\".format(userid))\n",
+        "\n",
+        "def delete_all_users ():\n",
+        "     print(\"Successfully deleted all users\")\n"
+      ],
+      "metadata": {
+        "id": "PXALbHq_wXSs"
+      },
+      "execution_count": 43,
+      "outputs": []
     }
   ],
   "metadata": {
